@@ -180,7 +180,6 @@
 <pin name="AD0/DIO0" x="22.86" y="7.62" length="middle" rot="R180"/>
 </symbol>
 <symbol name="CAT24C256">
-<description>IC EEPROM 256 kBit 400kHz</description>
 <wire x1="-7.62" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
