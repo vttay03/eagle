@@ -1,4 +1,6 @@
 MSP430 BeagleBone Cape Notes
 
-1) Initial MSP430 part selection is MSP430G2553 - comes in PDIP package for easy breadboarding
-2) Need to find library part for MSP430G2553 - final package will either be a 20TSSOP or 28TSSOP
+--Power estimate
+--Forward voltage drop on LEDs tied to MSP430 ports (i.e. is resistor correct value?)
+--Need to find actual dip switch part (otherwise use shunt jumpers - could save PCB space if that becomes an issue)
+--Add test points (3.3V monitor, etc.)
