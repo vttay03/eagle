@@ -8553,6 +8553,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
+<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8676,7 +8680,7 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <instance part="GND18" gate="1" x="429.895" y="29.21"/>
 <instance part="X1" gate="G$1" x="477.52" y="35.56"/>
 <instance part="GND19" gate="1" x="454.66" y="25.4"/>
-<instance part="PCB1" gate="G$1" x="314.325" y="230.505"/>
+<instance part="PCB1" gate="G$1" x="-81.915" y="89.535" rot="R90"/>
 <instance part="JP2" gate="A" x="488.95" y="95.25"/>
 <instance part="JP3" gate="A" x="488.95" y="66.675"/>
 <instance part="U$9" gate="G$1" x="406.4" y="127"/>
@@ -8703,6 +8707,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <instance part="C3" gate="G$1" x="377.825" y="121.92"/>
 <instance part="C4" gate="G$1" x="384.175" y="121.92"/>
 <instance part="U$10" gate="G$1" x="381" y="109.22"/>
+<instance part="GND4" gate="1" x="-22.86" y="-1.27"/>
+<instance part="GND5" gate="1" x="-144.78" y="-1.27"/>
+<instance part="SUPPLY14" gate="G$1" x="-18.415" y="48.26"/>
+<instance part="SUPPLY15" gate="G$1" x="-11.43" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -8725,6 +8733,16 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="172.085" y1="134.62" x2="172.085" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="172.085" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="P9.5"/>
+<pinref part="SUPPLY15" gate="G$1" pin="5V"/>
+<wire x1="-31.115" y1="43.815" x2="-11.43" y2="43.815" width="0.1524" layer="91"/>
+<wire x1="-11.43" y1="43.815" x2="-11.43" y2="46.355" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="P9.6"/>
+<wire x1="-11.43" y1="46.355" x2="-11.43" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-31.115" y1="46.355" x2="-11.43" y2="46.355" width="0.1524" layer="91"/>
+<junction x="-11.43" y="46.355"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
@@ -8821,6 +8839,16 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="410.21" y1="140.97" x2="415.925" y2="140.97" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
 <wire x1="415.925" y1="140.97" x2="415.925" y2="151.13" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PCB1" gate="G$1" pin="P9.3"/>
+<wire x1="-31.115" y1="38.735" x2="-18.415" y2="38.735" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
+<wire x1="-18.415" y1="38.735" x2="-18.415" y2="41.275" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="P9.4"/>
+<wire x1="-18.415" y1="41.275" x2="-18.415" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-31.115" y1="41.275" x2="-18.415" y2="41.275" width="0.1524" layer="91"/>
+<junction x="-18.415" y="41.275"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -8980,6 +9008,42 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <pinref part="U$9" gate="G$1" pin="GND"/>
 <wire x1="393.065" y1="124.46" x2="396.24" y2="124.46" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="-144.78" y1="38.735" x2="-144.78" y2="36.195" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="P8.2"/>
+<wire x1="-144.78" y1="36.195" x2="-144.78" y2="1.27" width="0.1524" layer="91"/>
+<wire x1="-135.255" y1="38.735" x2="-144.78" y2="38.735" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="P8.1"/>
+<wire x1="-135.255" y1="36.195" x2="-144.78" y2="36.195" width="0.1524" layer="91"/>
+<junction x="-144.78" y="36.195"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="-22.86" y1="1.27" x2="-22.86" y2="33.655" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="P9.2"/>
+<wire x1="-22.86" y1="33.655" x2="-22.86" y2="36.195" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="36.195" x2="-31.115" y2="36.195" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="P9.1"/>
+<wire x1="-31.115" y1="33.655" x2="-22.86" y2="33.655" width="0.1524" layer="91"/>
+<junction x="-22.86" y="33.655"/>
+<wire x1="-22.86" y1="36.195" x2="-22.86" y2="140.335" width="0.1524" layer="91"/>
+<junction x="-22.86" y="36.195"/>
+<pinref part="PCB1" gate="G$1" pin="P9.43"/>
+<wire x1="-22.86" y1="140.335" x2="-31.115" y2="140.335" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="P9.44"/>
+<wire x1="-31.115" y1="142.875" x2="-22.86" y2="142.875" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="142.875" x2="-22.86" y2="140.335" width="0.1524" layer="91"/>
+<junction x="-22.86" y="140.335"/>
+<pinref part="PCB1" gate="G$1" pin="P9.45"/>
+<wire x1="-31.115" y1="145.415" x2="-22.86" y2="145.415" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="145.415" x2="-22.86" y2="142.875" width="0.1524" layer="91"/>
+<junction x="-22.86" y="142.875"/>
+<pinref part="PCB1" gate="G$1" pin="P9.46"/>
+<wire x1="-31.115" y1="147.955" x2="-22.86" y2="147.955" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="147.955" x2="-22.86" y2="145.415" width="0.1524" layer="91"/>
+<junction x="-22.86" y="145.415"/>
+</segment>
 </net>
 <net name="GYR_INT" class="0">
 <segment>
@@ -8991,6 +9055,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="22.225" y1="83.82" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
 <label x="25.4" y="84.455" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="GPIO2_12"/>
+</segment>
+<segment>
+<wire x1="-161.29" y1="132.715" x2="-135.255" y2="132.715" width="0.1524" layer="91"/>
+<label x="-154.94" y="132.715" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GYR_RDY" class="0">
@@ -9004,6 +9072,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <label x="25.4" y="81.915" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="GPIO2_10"/>
 </segment>
+<segment>
+<wire x1="-161.29" y1="137.795" x2="-135.255" y2="137.795" width="0.1524" layer="91"/>
+<label x="-154.94" y="137.795" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LSM_INT1" class="0">
 <segment>
@@ -9015,6 +9087,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="22.225" y1="78.74" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
 <label x="25.4" y="79.375" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="GPIO2_8"/>
+</segment>
+<segment>
+<wire x1="-161.29" y1="142.875" x2="-135.255" y2="142.875" width="0.1524" layer="91"/>
+<label x="-154.94" y="142.875" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LSM_INT2" class="0">
@@ -9028,6 +9104,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <label x="116.205" y="84.455" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="GPIO2_13"/>
 </segment>
+<segment>
+<wire x1="-161.29" y1="135.255" x2="-135.255" y2="135.255" width="0.1524" layer="91"/>
+<label x="-154.94" y="135.255" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LSM_DRDY" class="0">
 <segment>
@@ -9039,6 +9119,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="104.14" y1="81.28" x2="126.365" y2="81.28" width="0.1524" layer="91"/>
 <label x="116.205" y="81.915" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="GPIO2_11"/>
+</segment>
+<segment>
+<wire x1="-161.29" y1="140.335" x2="-135.255" y2="140.335" width="0.1524" layer="91"/>
+<label x="-154.94" y="140.335" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9093,6 +9177,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="23.495" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
 <label x="25.4" y="48.895" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="GPIO1_16"/>
+</segment>
+<segment>
+<wire x1="-31.115" y1="69.215" x2="0.635" y2="69.215" width="0.1524" layer="91"/>
+<label x="-19.05" y="69.215" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPS_RX" class="0">
@@ -9154,6 +9242,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="104.14" y1="53.34" x2="135.89" y2="53.34" width="0.1524" layer="91"/>
 <label x="118.745" y="53.975" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-31.115" y1="61.595" x2="0.635" y2="61.595" width="0.1524" layer="91"/>
+<label x="-19.05" y="61.595" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$11" class="0">
 <segment>
@@ -9186,6 +9278,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="175.26" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
 <label x="161.29" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="0.635" y1="79.375" x2="-31.115" y2="79.375" width="0.1524" layer="91"/>
+<label x="-18.415" y="79.375" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="I2C2_SDA" class="0">
 <segment>
@@ -9204,6 +9300,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
 <label x="161.29" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-31.115" y1="81.915" x2="0.635" y2="81.915" width="0.1524" layer="91"/>
+<label x="-18.415" y="81.915" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -9362,6 +9462,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <label x="467.36" y="64.135" size="1.778" layer="95"/>
 <pinref part="JP3" gate="A" pin="7"/>
 </segment>
+<segment>
+<wire x1="-31.115" y1="86.995" x2="0.635" y2="86.995" width="0.1524" layer="91"/>
+<label x="-18.415" y="86.995" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DBG_TX" class="0">
 <segment>
@@ -9373,6 +9477,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="486.41" y1="69.215" x2="465.455" y2="69.215" width="0.1524" layer="91"/>
 <label x="467.36" y="69.215" size="1.778" layer="95"/>
 <pinref part="JP3" gate="A" pin="3"/>
+</segment>
+<segment>
+<wire x1="0.635" y1="84.455" x2="-31.115" y2="84.455" width="0.1524" layer="91"/>
+<label x="-18.415" y="84.455" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BB_GPS_TX" class="0">
@@ -9386,6 +9494,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="104.14" y1="38.1" x2="135.89" y2="38.1" width="0.1524" layer="91"/>
 <label x="118.745" y="38.1" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-31.115" y1="92.075" x2="0.635" y2="92.075" width="0.1524" layer="91"/>
+<label x="-18.415" y="92.075" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BB_GPS_RX" class="0">
 <segment>
@@ -9397,6 +9509,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <pinref part="U$1" gate="G$1" pin="UART1_RXD"/>
 <wire x1="104.14" y1="35.56" x2="135.89" y2="35.56" width="0.1524" layer="91"/>
 <label x="118.745" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-31.115" y1="97.155" x2="0.635" y2="97.155" width="0.1524" layer="91"/>
+<label x="-18.415" y="97.155" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -9430,6 +9546,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="104.14" y1="78.74" x2="126.365" y2="78.74" width="0.1524" layer="91"/>
 <label x="116.205" y="78.74" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-161.29" y1="145.415" x2="-135.255" y2="145.415" width="0.1524" layer="91"/>
+<label x="-154.94" y="145.415" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -9459,6 +9579,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <label x="223.52" y="58.42" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="3D-FIX"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
+</segment>
+<segment>
+<wire x1="-135.255" y1="147.955" x2="-161.29" y2="147.955" width="0.1524" layer="91"/>
+<label x="-154.94" y="147.955" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
