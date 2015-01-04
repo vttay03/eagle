@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -7994,9 +7994,9 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="363.22" y1="127" x2="363.22" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
-<wire x1="363.22" y1="132.08" x2="359.41" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
-<wire x1="359.41" y1="132.08" x2="317.5" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="132.08" x2="360.68" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="132.08" x2="317.5" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="363.22" y1="132.08" x2="363.22" y2="153.67" width="0.1524" layer="91"/>
 <junction x="363.22" y="132.08"/>
 <pinref part="R9" gate="G$1" pin="2"/>
@@ -8020,9 +8020,10 @@ Only Install if Jumpers 3-4 and 7-8 are set on JP2</text>
 <wire x1="277.495" y1="147.955" x2="277.495" y2="153.67" width="0.1524" layer="91"/>
 <wire x1="277.495" y1="153.67" x2="283.21" y2="153.67" width="0.1524" layer="91"/>
 <junction x="283.21" y="153.67"/>
-<wire x1="355.6" y1="127" x2="359.41" y2="127" width="0.1524" layer="91"/>
-<wire x1="359.41" y1="127" x2="359.41" y2="132.08" width="0.1524" layer="91"/>
-<junction x="359.41" y="132.08"/>
+<wire x1="360.68" y1="132.08" x2="360.68" y2="127" width="0.1524" layer="91"/>
+<junction x="360.68" y="132.08"/>
+<wire x1="360.68" y1="127" x2="354.965" y2="127" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VCC"/>
